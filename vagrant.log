@@ -1,0 +1,336 @@
+Bringing machine 'hgv' up with 'virtualbox' provider...
+==> hgv: Importing base box 'ubuntu/trusty64'...
+[KProgress: 90%[K==> hgv: Matching MAC address for NAT networking...
+==> hgv: Checking if box 'ubuntu/trusty64' is up to date...
+==> hgv: Setting the name of the VM: hgv
+==> hgv: Clearing any previously set forwarded ports...
+==> hgv: Fixed port collision for 22 => 2222. Now on port 2200.
+==> hgv: Clearing any previously set network interfaces...
+==> hgv: Preparing network interfaces based on configuration...
+    hgv: Adapter 1: nat
+    hgv: Adapter 2: hostonly
+==> hgv: Forwarding ports...
+    hgv: 3306 => 23306 (adapter 1)
+    hgv: 22 => 2200 (adapter 1)
+==> hgv: Running 'pre-boot' VM customizations...
+==> hgv: Booting VM...
+==> hgv: Waiting for machine to boot. This may take a few minutes...
+    hgv: SSH address: 127.0.0.1:2200
+    hgv: SSH username: vagrant
+    hgv: SSH auth method: private key
+    hgv: Warning: Connection timeout. Retrying...
+    hgv: 
+    hgv: Vagrant insecure key detected. Vagrant will automatically replace
+    hgv: this with a newly generated keypair for better security.
+    hgv: 
+    hgv: Inserting generated public key within guest...
+    hgv: Removing insecure key from the guest if its present...
+    hgv: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> hgv: Machine booted and ready!
+==> hgv: Checking for guest additions in VM...
+==> hgv: Setting hostname...
+==> hgv: Configuring and enabling network interfaces...
+==> hgv: Mounting shared folders...
+    hgv: /vagrant => C:/Users/brandon.morrison/www/roadkill/src/hgv
+    hgv: /hgv_data => C:/Users/brandon.morrison/www/roadkill/src/hgv/hgv_data
+==> hgv: Running provisioner: shell...
+    hgv: Running: C:/Users/BRANDO~1.MOR/AppData/Local/Temp/vagrant-shell20150326-7496-1r1d9v2.sh
+==> hgv:  -------------------------  -----------------
+==> hgv: |   _    _                ||  __      __     |
+==> hgv: |  | |  | |               ||  \ \    / /     |
+==> hgv: |  | |__| |  __           ||   \ \  / /      |
+==> hgv: |  |  __  |/ _` \         ||    \ \/ /       |
+==> hgv: |  | |  | | (_| |         ||     \  /        |
+==> hgv: |  |_|  |_|\__, |         ||      \/         |
+==> hgv: |           __/ |___  __  ||        ___ ____ |
+==> hgv: |          |___/( _ )/  \ ||       |_  )__ / |
+==> hgv: |               / _ \ () |||        / / |_ \ |
+==> hgv: |               \___/\__/ ||       /___|___/ |
+==> hgv:  -------------------------  -----------------
+==> hgv: Updating APT sources.
+==> hgv: Installing for Ansible.
+==> hgv: Reading package lists...
+==> hgv: Building dependency tree...
+==> hgv: Reading state information...
+==> hgv: software-properties-common is already the newest version.
+==> hgv: 0 upgraded, 0 newly installed, 0 to remove and 9 not upgraded.
+==> hgv: gpg: 
+==> hgv: keyring `/tmp/tmpyv6x9c7z/secring.gpg' created
+==> hgv: gpg: 
+==> hgv: keyring `/tmp/tmpyv6x9c7z/pubring.gpg' created
+==> hgv: gpg: 
+==> hgv: requesting key 7BB9C367 from hkp server keyserver.ubuntu.com
+==> hgv: gpg: 
+==> hgv: /tmp/tmpyv6x9c7z/trustdb.gpg: trustdb created
+==> hgv: gpg: 
+==> hgv: key 7BB9C367: public key "Launchpad PPA for Ansible, Inc." imported
+==> hgv: gpg: 
+==> hgv: Total number processed: 1
+==> hgv: gpg: 
+==> hgv:               imported: 1
+==> hgv:   (RSA: 1)
+==> hgv: OK
+==> hgv: Ign http://security.ubuntu.com trusty-security InRelease
+==> hgv: Hit http://security.ubuntu.com trusty-security Release.gpg
+==> hgv: Ign http://ppa.launchpad.net trusty InRelease
+==> hgv: Ign http://archive.ubuntu.com trusty InRelease
+==> hgv: Hit http://security.ubuntu.com trusty-security Release
+==> hgv: Hit http://security.ubuntu.com trusty-security/main Sources
+==> hgv: Get:1 http://ppa.launchpad.net trusty Release.gpg [836 B]
+==> hgv: Ign http://archive.ubuntu.com trusty-updates InRelease
+==> hgv: Hit http://security.ubuntu.com trusty-security/universe Sources
+==> hgv: Hit http://archive.ubuntu.com trusty Release.gpg
+==> hgv: Get:2 http://ppa.launchpad.net trusty Release [15.1 kB]
+==> hgv: Hit http://security.ubuntu.com trusty-security/main amd64 Packages
+==> hgv: Hit http://security.ubuntu.com trusty-security/universe amd64 Packages
+==> hgv: Hit http://archive.ubuntu.com trusty-updates Release.gpg
+==> hgv: Hit http://security.ubuntu.com trusty-security/main Translation-en
+==> hgv: Hit http://security.ubuntu.com trusty-security/universe Translation-en
+==> hgv: Hit http://archive.ubuntu.com trusty Release
+==> hgv: Get:3 http://ppa.launchpad.net trusty/main amd64 Packages [499 B]
+==> hgv: Hit http://archive.ubuntu.com trusty-updates Release
+==> hgv: Get:4 http://ppa.launchpad.net trusty/main Translation-en [322 B]
+==> hgv: Hit http://archive.ubuntu.com trusty/main Sources
+==> hgv: Hit http://archive.ubuntu.com trusty/universe Sources
+==> hgv: Hit http://archive.ubuntu.com trusty/main amd64 Packages
+==> hgv: Hit http://archive.ubuntu.com trusty/universe amd64 Packages
+==> hgv: Hit http://archive.ubuntu.com trusty/main Translation-en
+==> hgv: Hit http://archive.ubuntu.com trusty/universe Translation-en
+==> hgv: Hit http://archive.ubuntu.com trusty-updates/main Sources
+==> hgv: Hit http://archive.ubuntu.com trusty-updates/universe Sources
+==> hgv: Hit http://archive.ubuntu.com trusty-updates/main amd64 Packages
+==> hgv: Hit http://archive.ubuntu.com trusty-updates/universe amd64 Packages
+==> hgv: Hit http://archive.ubuntu.com trusty-updates/main Translation-en
+==> hgv: Hit http://archive.ubuntu.com trusty-updates/universe Translation-en
+==> hgv: Ign http://archive.ubuntu.com trusty/main Translation-en_US
+==> hgv: Ign http://archive.ubuntu.com trusty/universe Translation-en_US
+==> hgv: Fetched 16.7 kB in 4s (3,966 B/s)
+==> hgv: Reading package lists...
+==> hgv: Reading package lists...
+==> hgv: Building dependency tree...
+==> hgv: Reading state information...
+==> hgv: The following extra packages will be installed:
+==> hgv:   python-jinja2 python-markupsafe python-paramiko python-support sshpass
+==> hgv: Suggested packages:
+==> hgv:   python-jinja2-doc
+==> hgv: The following NEW packages will be installed:
+==> hgv:   ansible python-jinja2 python-markupsafe python-paramiko python-support
+==> hgv:   sshpass
+==> hgv: 0 upgraded, 6 newly installed, 0 to remove and 9 not upgraded.
+==> hgv: Need to get 942 kB of archives.
+==> hgv: After this operation, 6,145 kB of additional disk space will be used.
+==> hgv: Get:1 http://archive.ubuntu.com/ubuntu/ trusty/universe python-support all 1.0.15 [26.7 kB]
+==> hgv: Get:2 http://ppa.launchpad.net/ansible/ansible/ubuntu/ trusty/main ansible all 1.9.0.1-1ppa~trusty [624 kB]
+==> hgv: Get:3 http://archive.ubuntu.com/ubuntu/ trusty/main python-markupsafe amd64 0.18-1build2 [14.3 kB]
+==> hgv: Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main python-jinja2 all 2.7.2-2 [161 kB]
+==> hgv: Get:5 http://archive.ubuntu.com/ubuntu/ trusty/main python-paramiko all 1.10.1-1git1build1 [106 kB]
+==> hgv: Get:6 http://archive.ubuntu.com/ubuntu/ trusty/universe sshpass amd64 1.05-1 [10.5 kB]
+==> hgv: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+==> hgv: Fetched 942 kB in 1s (542 kB/s)
+==> hgv: Selecting previously unselected package python-support.
+==> hgv: (Reading database ... 60972 files and directories currently installed.)
+==> hgv: Preparing to unpack .../python-support_1.0.15_all.deb ...
+==> hgv: Unpacking python-support (1.0.15) ...
+==> hgv: Selecting previously unselected package python-markupsafe.
+==> hgv: Preparing to unpack .../python-markupsafe_0.18-1build2_amd64.deb ...
+==> hgv: Unpacking python-markupsafe (0.18-1build2) ...
+==> hgv: Selecting previously unselected package python-jinja2.
+==> hgv: Preparing to unpack .../python-jinja2_2.7.2-2_all.deb ...
+==> hgv: Unpacking python-jinja2 (2.7.2-2) ...
+==> hgv: Selecting previously unselected package python-paramiko.
+==> hgv: Preparing to unpack .../python-paramiko_1.10.1-1git1build1_all.deb ...
+==> hgv: Unpacking python-paramiko (1.10.1-1git1build1) ...
+==> hgv: Selecting previously unselected package sshpass.
+==> hgv: Preparing to unpack .../sshpass_1.05-1_amd64.deb ...
+==> hgv: Unpacking sshpass (1.05-1) ...
+==> hgv: Selecting previously unselected package ansible.
+==> hgv: Preparing to unpack .../ansible_1.9.0.1-1ppa~trusty_all.deb ...
+==> hgv: Unpacking ansible (1.9.0.1-1ppa~trusty) ...
+==> hgv: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+==> hgv: Setting up python-support (1.0.15) ...
+==> hgv: Setting up python-markupsafe (0.18-1build2) ...
+==> hgv: Setting up python-jinja2 (2.7.2-2) ...
+==> hgv: Setting up python-paramiko (1.10.1-1git1build1) ...
+==> hgv: Setting up sshpass (1.05-1) ...
+==> hgv: Setting up ansible (1.9.0.1-1ppa~trusty) ...
+==> hgv: Processing triggers for python-support (1.0.15) ...
+==> hgv: Ansible installed (1.9.0.1-1ppa~trusty)
+==> hgv: Validating Ansible hostfile permissions.
+==> hgv: 
+==> hgv: PLAY [all] ******************************************************************** 
+==> hgv: 
+==> hgv: GATHERING FACTS *************************************************************** 
+==> hgv: ok: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Uninstall deprecated packages or ones we don't want anymore] *** 
+==> hgv: ok: [127.0.0.1] => (item=phpunit)
+==> hgv: 
+==> hgv: TASK: [common | Install necessary packages for proper system state] *********** 
+==> hgv: changed: [127.0.0.1] => (item=sysv-rc-conf,python-apt,python-pycurl,python-mysqldb,git,curl,unzip,php5-mysql,traceroute,ack-grep,subversion,autojump,siege)
+==> hgv: 
+==> hgv: TASK: [common | Get Composer] ************************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Install PsySH] ************************************************ 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Install Boris] ************************************************ 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Set up host entries] ****************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Get PHPUnit] ************************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Create swap file] ********************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Setup swap area] ********************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Change swap file permissions] ********************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Write swap entry in fstab] ************************************ 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Swap on] ****************************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Check if daemonize is installed.] ***************************** 
+==> hgv: ok: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Download daemonize source] ************************************ 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Expand daemonize source] ************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [common | Compile daemonize] ******************************************** 
+==> hgv: changed: [127.0.0.1] => (item=./configure)
+==> hgv: changed: [127.0.0.1] => (item=make prefix=/usr)
+==> hgv: changed: [127.0.0.1] => (item=make prefix=/usr install)
+==> hgv: 
+==> hgv: TASK: [hhvm | Enable HHVM repo key] ******************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [hhvm | Enable HHVM repo] *********************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [hhvm | Install HHVM] *************************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [hhvm | Do /etc/hhvm/server.ini] **************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [hhvm | Do /etc/hhvm/php.ini] ******************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [hhvm | Ensure HHVM is running] ***************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [php-fpm | Install PHP packages] **************************************** 
+==> hgv: changed: [127.0.0.1] => (item=php5,php5-cli,php5-gd,php5-fpm,php5-memcache,php5-memcached,php5-xdebug,php5-dev,libyaml-dev)
+==> hgv: 
+==> hgv: TASK: [php-fpm | Install PECL modules] **************************************** 
+==> hgv: changed: [127.0.0.1] => (item=yaml)
+==> hgv: 
+==> hgv: TASK: [php-fpm | Register YAML module] **************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [php-fpm | Enable YAML module] ****************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [memcached | Install memcached server] ********************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [memcached | Do memcached config] *************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | ensure /etc/mysql] ******************************************* 
+==> hgv: ok: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | ensure /etc/mysql/my.cnf ...] ******************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | Install Percona GPG key] ************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | Enable Percona repo] ***************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | Install Percona server] ************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | Install Percona client] ************************************** 
+==> hgv: ok: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [percona | Grant root user access] ************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Install Nginx GPG key] ***************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Enable Nginx stable repo] ************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Install nginx] ************************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Ensure /etc/nginx directories exist] *************************** 
+==> hgv: ok: [127.0.0.1] => (item=/etc/nginx/sites-available)
+==> hgv: ok: [127.0.0.1] => (item=/etc/nginx/sites-enabled)
+==> hgv: 
+==> hgv: TASK: [nginx | Configure /etc/nginx/nginx.conf] ******************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Do nginx upstream.conf] **************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Remove default.conf] ******************************************* 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Set up dashboard] ********************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Ensure main docroot exists] ************************************ 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Set up master docroot] ***************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Sites docroot link] ******************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Copy dashboard contents] *************************************** 
+==> hgv: changed: [127.0.0.1 -> 127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Copy README] *************************************************** 
+==> hgv: changed: [127.0.0.1 -> 127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [nginx | Make sure Nginx is running] ************************************ 
+==> hgv: ok: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [wp-cli | Create install location for WP-CLI] *************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [wp-cli | Install WP-CLI] *********************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [wp-cli | Set execute bits on WP-CLI] *********************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [wp-cli | Symlink WP-CLI] *********************************************** 
+==> hgv: changed: [127.0.0.1]
+==> hgv: 
+==> hgv: TASK: [varnish | Fill the varnish GPG Key] ************************************ 
+==> hgv: failed: [127.0.0.1] => {"cmd": "apt-key add -", "failed": true, "rc": 2}
+==> hgv: stderr: gpg: invalid armor header: mQINBEyHLzoBEACwWIEvQ1PysbHP1zxMaRzcKC1+ZzIOB7yt59obMxgr+leU/wxq\n
+==> hgv: msg: gpg: invalid armor header: mQINBEyHLzoBEACwWIEvQ1PysbHP1zxMaRzcKC1+ZzIOB7yt59obMxgr+leU/wxq\n
+==> hgv: 
+==> hgv: FATAL: all hosts have already failed -- aborting
+==> hgv: 
+==> hgv: PLAY RECAP ******************************************************************** 
+==> hgv:            to retry, use: --limit @/root/playbook.retry
+==> hgv: 127.0.0.1                  : ok=54   changed=47   unreachable=0    failed=1   
